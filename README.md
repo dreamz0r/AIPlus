@@ -12,8 +12,6 @@ Load AI Plus after these mods:
 - DayZ Expansion AI
 - DayZ Expansion BaseBuilding
 
-AI Plus is not server-side only. Clients must load it too because the mod defines the custom `AIPlusRewardChest` item used by POI mission rewards.
-
 ## Install Notes
 
 This version uses the AI Plus config and class names. Server owners should delete configs from previous versions before updating.
