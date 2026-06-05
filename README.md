@@ -14,8 +14,6 @@ Load AI Plus after these mods:
 
 ## Install Notes
 
-This version uses the AI Plus config and class names. Server owners should delete configs from previous versions before updating.
-
 On first server start, the mod creates:
 
 `$profile:AIPlus/AIPlusConfig.json`
