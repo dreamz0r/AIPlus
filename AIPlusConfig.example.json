@@ -1,0 +1,239 @@
+{
+    "Enabled": true,
+    "DebugLogging": false,
+    "EnableCounterRaids": true,
+    "CounterRaidChance": 1.0,
+    "CounterRaidCooldownSeconds": 300,
+    "CounterRaidPatrolDurationSeconds": 300,
+    "CounterRaidSpawnDistanceMin": 200.0,
+    "CounterRaidSpawnDistanceMax": 300.0,
+    "CounterRaidPatrolRadius": 50.0,
+    "IgnoreTerritoryMemberDamage": true,
+    "CounterRaidProtectTerritoryMembers": true,
+    "SendCounterRaidNotice": true,
+    "CounterRaidNoticeTitle": "Counter-raid response",
+    "CounterRaidNoticeText": "Bandits have noticed your raid and are closing in on your location.",
+    "CounterRaidSpawn": {
+        "MinAI": 3,
+        "MaxAI": 6,
+        "Loadouts": [
+            "HumanLoadout"
+        ],
+        "Factions": [
+            "Raiders"
+        ],
+        "Units": [],
+        "Formation": "Vee",
+        "Speed": "JOG",
+        "UnderThreatSpeed": "SPRINT",
+        "AccuracyMin": -1.0,
+        "AccuracyMax": -1.0,
+        "ThreatDistanceLimit": -1.0,
+        "LootableChance": 0.0,
+        "UnlimitedReload": false
+    },
+    "EnablePlayerHunts": true,
+    "PlayerHuntCheckSeconds": 60,
+    "PlayerHuntChance": 1.0,
+    "PlayerHuntCooldownSeconds": 300,
+    "PlayerHuntPatrolDurationSeconds": 300,
+    "PlayerHuntSpawnDistanceMin": 200.0,
+    "PlayerHuntSpawnDistanceMax": 300.0,
+    "PlayerHuntPatrolRadius": 50.0,
+    "PlayerHuntNoticeTitle": "Bandits are hunting you.",
+    "PlayerHuntNoticeText": "You have been spotted by bandits. Run, hide or fight!",
+    "PlayerHuntSpawn": {
+        "MinAI": 2,
+        "MaxAI": 4,
+        "Loadouts": [
+            "HumanLoadout"
+        ],
+        "Factions": [
+            "Raiders"
+        ],
+        "Units": [],
+        "Formation": "Vee",
+        "Speed": "JOG",
+        "UnderThreatSpeed": "SPRINT",
+        "AccuracyMin": -1.0,
+        "AccuracyMax": -1.0,
+        "ThreatDistanceLimit": -1.0,
+        "LootableChance": 0.2,
+        "UnlimitedReload": false
+    },
+    "EnablePOIEncounters": true,
+    "POICheckSeconds": 60,
+    "POIMinDistanceBetweenEvents": 2500.0,
+    "POIEncounters": [
+        {
+            "Enabled": true,
+            "ID": "police",
+            "RaidType": "Police",
+            "BuildingClassNames": [
+                "Land_City_PoliceStation",
+                "Land_City_PoliceStation_Enoch"
+            ],
+            "Chance": 1.0,
+            "CooldownSeconds": 300,
+            "PatrolDurationSeconds": 300,
+            "PatrolRadius": 50.0,
+            "ChestClassName": "AIPlusRewardChest",
+            "RewardChestLifetimeSeconds": 900,
+            "EnableRewardChestUnlockIndicator": true,
+            "RewardChestUnlockIndicatorHeight": 1.1,
+            "ChestLootMin": 3,
+            "ChestLootMax": 3,
+            "ChestLootItemChance": 1.0,
+            "ChestLootItems": [
+                "BandageDressing",
+                "TacticalBaconCan",
+                "AmmoBox_556x45_20Rnd",
+                "AmmoBox_762x39_20Rnd",
+                "M67Grenade",
+                "Mag_STANAG_30Rnd",
+                "Mag_AKM_30Rnd",
+                "Morphine"
+            ],
+            "CreateExpansionMarker": true,
+            "MarkerName": "Police mission",
+            "MarkerIcon": "Territory",
+            "SendGlobalNotice": true,
+            "NoticeTitle": "Bandits spotted",
+            "NoticeText": "Bandits are looting the '%1' at '%2', take them out!",
+            "CompletionNoticeTitle": "Mission complete",
+            "CompletionNoticeText": "%1 mission near %2 is over.",
+            "Spawn": {
+                "MinAI": 3,
+                "MaxAI": 5,
+                "Loadouts": [
+                    "HumanLoadout"
+                ],
+                "Factions": [
+                    "Raiders"
+                ],
+                "Units": [],
+                "Formation": "Vee",
+                "Speed": "JOG",
+                "UnderThreatSpeed": "SPRINT",
+                "AccuracyMin": -1.0,
+                "AccuracyMax": -1.0,
+                "ThreatDistanceLimit": -1.0,
+                "LootableChance": 0.25,
+                "UnlimitedReload": false
+            }
+        },
+        {
+            "Enabled": true,
+            "ID": "firestation",
+            "RaidType": "Firestation",
+            "BuildingClassNames": [
+                "Land_City_FireStation",
+                "Land_Mil_FireStation"
+            ],
+            "Chance": 1.0,
+            "CooldownSeconds": 300,
+            "PatrolDurationSeconds": 300,
+            "PatrolRadius": 50.0,
+            "ChestClassName": "AIPlusRewardChest",
+            "RewardChestLifetimeSeconds": 900,
+            "EnableRewardChestUnlockIndicator": true,
+            "RewardChestUnlockIndicatorHeight": 1.1,
+            "ChestLootMin": 3,
+            "ChestLootMax": 3,
+            "ChestLootItemChance": 1.0,
+            "ChestLootItems": [
+                "BandageDressing",
+                "TacticalBaconCan",
+                "AmmoBox_556x45_20Rnd",
+                "AmmoBox_762x39_20Rnd",
+                "M67Grenade",
+                "Mag_STANAG_30Rnd",
+                "Mag_AKM_30Rnd",
+                "Morphine"
+            ],
+            "CreateExpansionMarker": true,
+            "MarkerName": "Firestation mission",
+            "MarkerIcon": "Territory",
+            "SendGlobalNotice": true,
+            "NoticeTitle": "Bandits spotted",
+            "NoticeText": "Bandits are looting the '%1' at '%2', take them out!",
+            "CompletionNoticeTitle": "Mission complete",
+            "CompletionNoticeText": "%1 mission near %2 is over.",
+            "Spawn": {
+                "MinAI": 3,
+                "MaxAI": 5,
+                "Loadouts": [
+                    "HumanLoadout"
+                ],
+                "Factions": [
+                    "Raiders"
+                ],
+                "Units": [],
+                "Formation": "Vee",
+                "Speed": "JOG",
+                "UnderThreatSpeed": "SPRINT",
+                "AccuracyMin": -1.0,
+                "AccuracyMax": -1.0,
+                "ThreatDistanceLimit": -1.0,
+                "LootableChance": 0.25,
+                "UnlimitedReload": false
+            }
+        },
+        {
+            "Enabled": true,
+            "ID": "hospital",
+            "RaidType": "Hospital",
+            "BuildingClassNames": [
+                "Land_City_Hospital"
+            ],
+            "Chance": 1.0,
+            "CooldownSeconds": 300,
+            "PatrolDurationSeconds": 300,
+            "PatrolRadius": 50.0,
+            "ChestClassName": "AIPlusRewardChest",
+            "RewardChestLifetimeSeconds": 900,
+            "EnableRewardChestUnlockIndicator": true,
+            "RewardChestUnlockIndicatorHeight": 1.1,
+            "ChestLootMin": 3,
+            "ChestLootMax": 3,
+            "ChestLootItemChance": 1.0,
+            "ChestLootItems": [
+                "BandageDressing",
+                "TacticalBaconCan",
+                "AmmoBox_556x45_20Rnd",
+                "AmmoBox_762x39_20Rnd",
+                "M67Grenade",
+                "Mag_STANAG_30Rnd",
+                "Mag_AKM_30Rnd",
+                "Morphine"
+            ],
+            "CreateExpansionMarker": true,
+            "MarkerName": "Hospital mission",
+            "MarkerIcon": "Territory",
+            "SendGlobalNotice": true,
+            "NoticeTitle": "Bandits spotted",
+            "NoticeText": "Bandits are looting the '%1' at '%2', take them out!",
+            "CompletionNoticeTitle": "Mission complete",
+            "CompletionNoticeText": "%1 mission near %2 is over.",
+            "Spawn": {
+                "MinAI": 3,
+                "MaxAI": 5,
+                "Loadouts": [
+                    "HumanLoadout"
+                ],
+                "Factions": [
+                    "Raiders"
+                ],
+                "Units": [],
+                "Formation": "Vee",
+                "Speed": "JOG",
+                "UnderThreatSpeed": "SPRINT",
+                "AccuracyMin": -1.0,
+                "AccuracyMax": -1.0,
+                "ThreatDistanceLimit": -1.0,
+                "LootableChance": 0.25,
+                "UnlimitedReload": false
+            }
+        }
+    ]
+}
